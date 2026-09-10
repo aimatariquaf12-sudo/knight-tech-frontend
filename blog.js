@@ -1,5 +1,5 @@
 // ===== CONFIG =====
-const API_URL = 'http://localhost:3000/api/posts';
+const API_URL = 'https://knight-tech-backend-production.up.railway.app/api/posts';
 const VISIBLE_COUNT = 6; // grid mein default kitne cards dikhein, baqi "Load More" pe
 
 // ===== Hero particles (pehle jaisa hi, posts se koi lena dena nahi) =====
