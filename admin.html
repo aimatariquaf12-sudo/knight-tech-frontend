@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ur">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Admin Panel</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body>
+
+  <header class="admin-header">
+    <h1>Blog Admin Panel</h1>
+  </header>
+
+  <!-- Tab buttons -->
+  <div class="admin-tabs">
+    <button class="tab-btn active" id="tab-posts-btn">Posts</button>
+    <button class="tab-btn" id="tab-contacts-btn">Contacts</button>
+  </div>
+
+  <main class="admin-main">
+
+    <!-- ===== POSTS TAB ===== -->
+    <div class="tab-panel active" id="tab-posts">
+
+      <!-- Add / Edit Form -->
+      <section class="form-card">
+        <h2 id="form-title">New Post</h2>
+        <form id="post-form">
+          <input type="hidden" id="post-id" />
+
+          <label>Title * <span class="hint" style="display:inline">(1–60 characters)</span></label>
+          <input type="text" id="title" required maxlength="60" placeholder="Enter a short, clear post title" />
+          <span class="hint" id="title-counter">0 / 60 characters</span>
+          <span class="error-text" id="title-error">Character limit reached (60 max).</span>
+
+          <label>Category</label>
+          <select id="category" required>
+            <option value="" disabled selected>Select a category</option>
+            <option value="electricity">Electricity</option>
+            <option value="water">Water Supply</option>
+            <option value="card">Card Machines</option>
+            <option value="broadband">Broadband</option>
+            <option value="compliance">Compliance</option>
+            <option value="company">Company News</option>
+          </select>
+
+          <label>Tag (display label, max 3 words, e.g. "Water Supply")</label>
+          <input type="text" id="tag" placeholder="e.g. Water Supply" />
+          <span class="hint" id="tag-counter">0 / 3 words</span>
+
+          <label>Content Path (link to the full post page, e.g. /posts/my-post.html)</label>
+          <input type="text" id="contentPath" placeholder="/posts/my-post.html" />
+          <span class="hint">Yeh path aapke actual blog post page ka hai (jahan poora content likha hai).</span>
+
+          <label>Description (1–160 characters)</label>
+          <textarea id="excerpt" rows="3" maxlength="160" placeholder="Write a short summary of this post"></textarea>
+          <span class="hint" id="excerpt-counter">0 / 160 characters</span>
+          <span class="error-text" id="excerpt-error">Character limit reached (160 max).</span>
+
+          <label>Image path (e.g. /images/my-post.webp)</label>
+          <input type="text" id="image" placeholder="/images/my-post.webp" />
+          <input type="file" id="image-file" accept="image/*" />
+          <span class="hint">File select karne se sirf path field bharega — file ko khud <code>backend/images/</code>
+            folder mein copy karna hoga.</span>
+
+          <label>Date</label>
+          <input type="date" id="date" />
+
+          <label>Read Time</label>
+          <input type="text" id="readTime" placeholder="e.g. 5 min read" />
+
+          <label>Link</label>
+          <input type="text" id="link" value="#" placeholder="https://example.com or #" />
+
+          <div class="checkbox-row">
+            <label><input type="checkbox" id="isFeatured" /> Featured</label>
+            <label><input type="checkbox" id="isHidden" /> Hidden</label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" id="submit-btn">Publish</button>
+            <button type="button" id="cancel-btn" class="secondary" style="display:none;">Cancel Edit</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Posts List -->
+      <section class="list-card">
+        <h2>Sab Posts</h2>
+        <div id="posts-list"></div>
+      </section>
+
+    </div>
+
+    <!-- ===== CONTACTS TAB ===== -->
+    <div class="tab-panel" id="tab-contacts">
+      <section class="list-card">
+        <h2>Contact Submissions</h2>
+        <div id="contacts-list"></div>
+      </section>
+    </div>
+
+  </main>
+
+  <script src="admin.js"></script>
+  <script src="admin-contacts.js"></script>
+
+  <!-- Tab switching logic -->
+  <script>
+    const tabPostsBtn = document.getElementById('tab-posts-btn');
+    const tabContactsBtn = document.getElementById('tab-contacts-btn');
+    const tabPostsPanel = document.getElementById('tab-posts');
+    const tabContactsPanel = document.getElementById('tab-contacts');
+
+    tabPostsBtn.addEventListener('click', () => {
+      tabPostsBtn.classList.add('active');
+      tabContactsBtn.classList.remove('active');
+      tabPostsPanel.classList.add('active');
+      tabContactsPanel.classList.remove('active');
+    });
+
+    tabContactsBtn.addEventListener('click', () => {
+      tabContactsBtn.classList.add('active');
+      tabPostsBtn.classList.remove('active');
+      tabContactsPanel.classList.add('active');
+      tabPostsPanel.classList.remove('active');
+    });
+  </script>
+</body>
+
+</html>

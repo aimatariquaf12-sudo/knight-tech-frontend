@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "firstName": "Ali",
+    "lastName": "Khan",
+    "email": "ali.khan@test.com",
+    "service": "Electricity & Gas Switching",
+    "message": "This is a test message to check the contact form.\"",
+    "status": "read",
+    "createdAt": "2026-09-09T10:35:34.578Z"
+  }
+]

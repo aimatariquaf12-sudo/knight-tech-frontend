@@ -1,0 +1,185 @@
+/* ==========================================================
+   contact.css
+   Animated background + layout helpers for the Contact page.
+   Loaded AFTER knight.css so it can layer on top of the
+   existing design system (colors, type, .btn, .contact-form
+   etc. all still come from knight.css).
+   ========================================================== */
+
+#page-banner,
+.contact {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero banner uses the site's own brand-blue gradient (same tones as the
+   about-panel stat card: #12173B -> #1B3A8C -> #2F63FF -> #5C86FF) */
+#page-banner {
+  background: radial-gradient(120% 140% at 85% 0%, #2F63FF 0%, #1B3A8C 32%, #12173B 65%, #0A0E24 100%);
+}
+
+#page-banner .eyebrow {
+  color: #9FB6FF;
+}
+
+#page-banner h2 {
+  color: #FFFFFF;
+}
+
+#page-banner p {
+  color: rgba(234, 240, 255, 0.78);
+}
+
+/* Hero banner is now a single-column layout — the location/map card
+   that used to sit in the second column has moved to the footer and
+   only appears there, on click. */
+.page-banner-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Background layer wrapper — sits behind the section content */
+.contact-bg-anim {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Soft glowing orbs that drift slowly in the background */
+.contact-bg-anim .glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: .35;
+  animation: kts-drift 16s ease-in-out infinite;
+  will-change: transform;
+}
+
+.contact-bg-anim .glow.g1 {
+  width: 380px;
+  height: 380px;
+  top: -120px;
+  right: -80px;
+  background: radial-gradient(circle, #5C86FF, transparent 70%);
+  animation-delay: 0s;
+}
+
+.contact-bg-anim .glow.g2 {
+  width: 300px;
+  height: 300px;
+  bottom: -100px;
+  left: -60px;
+  background: radial-gradient(circle, #2F63FF, transparent 70%);
+  animation-delay: -6s;
+}
+
+.contact-bg-anim .glow.g3 {
+  width: 220px;
+  height: 220px;
+  top: 40%;
+  left: 55%;
+  background: radial-gradient(circle, #5C86FF, transparent 70%);
+  animation-delay: -11s;
+  opacity: .22;
+}
+
+/* Circuit-line SVG animation, echoing the bolt motif from the homepage hero */
+.contact-bg-anim svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-bg-anim .circuit-path {
+  fill: none;
+  stroke: #2F63FF;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  opacity: .18;
+  stroke-dasharray: 8 10;
+  animation: kts-dash 26s linear infinite;
+}
+
+.contact-bg-anim .circuit-node {
+  fill: #5C86FF;
+  opacity: 0;
+  animation: kts-pulse 3.6s ease-in-out infinite;
+}
+
+@keyframes kts-drift {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(30px, -25px) scale(1.08);
+  }
+}
+
+@keyframes kts-dash {
+  to {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes kts-pulse {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(.6);
+  }
+
+  50% {
+    opacity: .9;
+    transform: scale(1.4);
+  }
+}
+
+#page-banner .contact-bg-anim .glow {
+  opacity: .55;
+}
+
+#page-banner .contact-bg-anim .circuit-path {
+  stroke: #9FB6FF;
+  opacity: .28;
+}
+
+#page-banner .contact-bg-anim .circuit-node {
+  fill: #EAF0FF;
+}
+
+/* Keep real content above the background layer */
+#page-banner .wrap,
+.contact .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+/* Fade/slide-up entrance for elements with .reveal, toggled by contact.js */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Subtle parallax hook — translated via JS mousemove on desktop */
+.contact-bg-anim .glow {
+  transition: transform .3s ease-out;
+}
+
+/* ============ FOOTER GRID — 5 columns ============ */
+/* ============ FOOTER GRID — 5 columns ============ */
+

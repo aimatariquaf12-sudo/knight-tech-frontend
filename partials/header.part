@@ -1,0 +1,122 @@
+<header id="site-header">
+    <nav>
+      <div class="logo">
+        <span class="mark"><svg viewBox="0 0 24 24" fill="none">
+            <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" fill="white" />
+          </svg></span>
+        Knight Tech Solution
+      </div>
+      <div class="nav-links">
+        <a href="knight.html" class="act">Home</a>
+        <a href="about.html">About</a>
+       
+
+        <div class="nav-item-dropdown">
+          <a href="services.html" class="dropdown-trigger">Services
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="Electricity.html" class="dropdown-item">
+              <span class="di-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2F63FF" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
+                </svg></span>
+              <span><span class="di-title">Electricity & Gas Switching</span><span class="di-desc">Tariff switch
+                  campaigns</span></span>
+            </a>
+            <a href="WaterSupply.html" class="dropdown-item">
+              <span class="di-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2F63FF" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2s7 8 7 13a7 7 0 1 1-14 0c0-5 7-13 7-13Z" />
+                </svg></span>
+              <span><span class="di-title">Water Supply Sign-Ups</span><span class="di-desc">Household & SME
+                  outreach</span></span>
+            </a>
+            <a href="card-machine-acquisition.html" class="dropdown-item">
+              <span class="di-ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#2F63FF" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+
+                  <!-- Card machine body -->
+                  <rect x="6" y="2" width="12" height="20" rx="2"></rect>
+
+                  <!-- Screen -->
+                  <rect x="8.5" y="4.5" width="7" height="5" rx="1"></rect>
+
+                  <!-- Keypad -->
+                  <circle cx="9.5" cy="13" r="0.7"></circle>
+                  <circle cx="12" cy="13" r="0.7"></circle>
+                  <circle cx="14.5" cy="13" r="0.7"></circle>
+
+                  <circle cx="9.5" cy="16" r="0.7"></circle>
+                  <circle cx="12" cy="16" r="0.7"></circle>
+                  <circle cx="14.5" cy="16" r="0.7"></circle>
+
+                  <!-- Contactless -->
+                  <path d="M10 19c1-1 3-1 4 0"></path>
+                  <path d="M9 20c1.5-1.5 4.5-1.5 6 0"></path>
+
+                </svg>
+              </span>
+
+              <span>
+                <span class="di-title">Card Machine Acquisition</span>
+                <span class="di-desc">Business payment solutions</span>
+              </span>
+            </a>
+            <a href="Landline-Broadband.html" class="dropdown-item">
+              <span class="di-ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#2F63FF" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                  <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                  <circle cx="12" cy="20" r="1" />
+                </svg>
+              </span>
+              <span>
+                <span class="di-title">Landline & Broadband</span>
+                <span class="di-desc">Home phone & internet sign-ups</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-outline">Talk to Us</a>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+
+    <div class="menu-scrim" id="menu-scrim"></div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="knight.html">Home</a>
+      <a href="about.html">About</a>
+
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger" id="mobile-services-trigger">
+          Services
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-menu" id="mobile-services-menu">
+          <a href="Electricity.html">Electricity & Gas Switching</a>
+          <a href="WaterSupply.html">Water Supply Sign-Ups</a>
+          <a href="card-machine-acquisition.html">Card Machine Acquisition</a>
+          <a href="Landline-Broadband.html">Landline & Broadband</a>
+        </div>
+      </div>
+
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="#contact" class="btn btn-outline">Talk to Us</a>
+    </div>
+</header>

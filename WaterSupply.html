@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Supply Sign-Ups — Knight Tech Solution</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="partials/footer.css">
+  <link rel="stylesheet" href="partials/header.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,440;9..144,560;9..144,650;9..144,760&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="WaterSupply.css">
+</head>
+
+<body>
+
+ <div id="header-placeholder"></div>
+  <!-- ============ HERO ============ -->
+  <section class="water-hero">
+    <div class="water-bg">
+      <div class="wave-layer wave-a"></div>
+      <div class="wave-layer wave-b"></div>
+      <span class="bubble b1"></span>
+      <span class="bubble b2"></span>
+      <span class="bubble b3"></span>
+      <span class="bubble b4"></span>
+      <span class="bubble b5"></span>
+    </div>
+
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> Water Supply Sign-Ups</span>
+        <h1>Every sign-up<br>starts with<em> a clear glass of trust.</em></h1>
+        <p class="lead">We run household and SME water enrolment campaigns scripted, recorded, and supervised so every
+          call earns a straight answer before it earns a signature.</p>
+        <div class="hero-ctas">
+          <a href="knight.html#contact" class="btn btn-primary">Discuss This Vertical</a>
+          <a href="#process" class="btn btn-ghost">See How a Call Runs →</a>
+        </div>
+        <div class="trust-row">
+          <span>Provider-approved scripts</span>
+          <span>100% call recording</span>
+          <span>Live floor supervision</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="glass-card">
+          <div class="glass-head">
+            <span class="tag">Enrolment Check · Live</span>
+            <span class="live"><i></i>On Call</span>
+          </div>
+
+          <div class="glass-wrap">
+            <svg class="glass-outline" viewBox="0 0 120 160">
+              <path d="M22 8h76l-10 130a10 10 0 0 1-10 10H42a10 10 0 0 1-10-10L22 8Z" fill="none"
+                stroke="var(--navy-line)" stroke-width="2" />
+            </svg>
+            <div class="glass-clip">
+              <div class="fill-wave" id="fillWave"></div>
+            </div>
+            <svg class="glass-outline glass-outline-top" viewBox="0 0 120 160">
+              <path d="M22 8h76l-10 130a10 10 0 0 1-10 10H42a10 10 0 0 1-10-10L22 8Z" fill="none"
+                stroke="var(--blue-bright)" stroke-width="2" opacity=".55" />
+            </svg>
+          </div>
+
+          <div class="savings-line">
+            <div class="num" id="fillNum">0<span>% opt-in rate</span></div>
+            <p>Average enrolment rate on a fully worked household list</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STAT STRIP ============ -->
+  <section class="stat-strip">
+    <div class="wrap stat-grid">
+      <div class="stat reveal">
+        <div class="n" data-target="38" data-suffix="K">0</div>
+        <p>Water enrolment calls placed monthly</p>
+      </div>
+      <div class="stat reveal">
+        <div class="n" data-target="100" data-suffix="%">0</div>
+        <p>Calls recorded for provider & compliance review</p>
+      </div>
+      <div class="stat reveal">
+        <div class="n" data-target="1" data-suffix=" in 4" data-plain="1 in 4">0</div>
+        <p>Qualified calls that convert to a confirmed sign-up</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section id="process" class="light-section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="dot"></span>How a sign-up call runs</span>
+        <h2>Five steps. No shortcuts.</h2>
+        <p>The same sequence, every time because that consistency is what makes the call defensible if anyone ever asks
+          to hear it back.</p>
+      </div>
+
+      <div class="process-list">
+
+        <div class="proc-item reveal">
+          <div class="proc-visual">
+            <svg viewBox="0 0 100 100" class="proc-icon">
+              <path d="M35 15 L70 15 L70 85 L30 85 L30 30 Z" />
+              <circle cx="50" cy="72" r="3" />
+              <path d="M40 25 L60 25" />
+            </svg>
+          </div>
+          <div class="proc-content">
+            <span class="proc-num">01</span>
+            <h3>Open & identify</h3>
+            <p>Agent identifies KnightVolt, the client water provider, and the reason for the call before anything else
+              is discussed.</p>
+            <span class="proc-tag">Mandatory disclosure</span>
+          </div>
+        </div>
+
+        <div class="proc-item reveal">
+          <div class="proc-visual">
+            <svg viewBox="0 0 100 100" class="proc-icon">
+              <path d="M55 8 30 55h20l-4 38 32-52H58l4-33Z" />
+            </svg>
+          </div>
+          <div class="proc-content">
+            <span class="proc-num">02</span>
+            <h3>Current supply check</h3>
+            <p>We confirm the household or business's current water supplier, meter status, and property type before
+              offering anything.</p>
+            <span class="proc-tag">No blind pitching</span>
+          </div>
+        </div>
+
+        <div class="proc-item reveal">
+          <div class="proc-visual">
+            <svg viewBox="0 0 100 100" class="proc-icon">
+              <path d="M20 35 L45 35 L45 20 L65 40 L45 60 L45 45 L20 45 Z" />
+              <path d="M80 65 L55 65 L55 80 L35 60 L55 40 L55 55 L80 55 Z" />
+            </svg>
+          </div>
+          <div class="proc-content">
+            <span class="proc-num">03</span>
+            <h3>Plan comparison</h3>
+            <p>Agent walks through the approved plan script standing charge, metered vs unmetered, billing cycle stated
+              plainly.</p>
+            <span class="proc-tag">Provider-approved wording</span>
+          </div>
+        </div>
+
+        <div class="proc-item reveal">
+          <div class="proc-visual">
+            <svg viewBox="0 0 100 100" class="proc-icon">
+              <circle cx="50" cy="50" r="34" />
+              <path d="M35 51 L46 62 L67 39" />
+            </svg>
+          </div>
+          <div class="proc-content">
+            <span class="proc-num">04</span>
+            <h3>Consent & verification</h3>
+            <p>Explicit verbal consent is captured and timestamped before any enrolment request moves forward.</p>
+            <span class="proc-tag">Recorded checkpoint</span>
+          </div>
+        </div>
+
+        <div class="proc-item reveal">
+          <div class="proc-visual">
+            <svg viewBox="0 0 100 100" class="proc-icon">
+              <path d="M15 50 L70 50" />
+              <path d="M55 32 L75 50 L55 68" />
+              <circle cx="20" cy="50" r="5" />
+            </svg>
+          </div>
+          <div class="proc-content">
+            <span class="proc-num">05</span>
+            <h3>Confirmation or booking</h3>
+            <p>Confirmed sign-ups are processed live or booked for provider follow-up, with the full call attached to
+              the record.</p>
+            <span class="proc-tag">Handover, not hand-off</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCRIPT SHOWCASE ============ -->
+  <section
+    style="background:var(--navy);border-top:1px solid var(--navy-line);border-bottom:1px solid var(--navy-line);">
+    <div class="wrap script-block">
+      <div class="reveal">
+        <div class="script-card">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="script-line" data-line="1">&gt; <b>Agent:</b> "Hi, this is Amel calling on behalf of your water
+            supplier about your current household plan — is now an okay time?"</div>
+          <div class="script-line" data-line="2">&gt; <b>System:</b> consent checkpoint logged</div>
+          <div class="script-line" data-line="3">&gt; <b>Agent:</b> "Can I confirm your property is currently on a
+            metered supply?"</div>
+          <div class="script-line" data-line="4"><span class="approved">✓ Script line approved by compliance</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <span class="eyebrow"><span class="dot"></span> Every word is signed off</span>
+        <h2 style="font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,2.8vw,2.2rem);margin:14px 0 18px;">
+          Scripts your compliance team writes the rules for.</h2>
+        <div class="check-list">
+          <div class="check-item">
+            <div class="check-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="9" />
+              </svg></div>
+            <div>
+              <h4>Line-by-line sign-off</h4>
+              <p>Nothing goes to a live agent until your team has approved the exact wording.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <div class="check-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="10" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg></div>
+            <div>
+              <h4>Locked deviation limits</h4>
+              <p>Agents are trained on where they can adapt phrasing and where they can't.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <div class="check-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 7v5l3 3" />
+              </svg></div>
+            <div>
+              <h4>Version-tracked scripts</h4>
+              <p>Every script revision is timestamped, so any call can be matched to the wording live at the time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="companies-section light-section water-companies-section">
+
+    <div class="wrap">
+
+      <span class="eyebrow">
+        <span class="dot"></span>
+        Who we connect customers with
+      </span>
+
+      <p class="section-intro">
+        Connecting customers with established UK water providers by helping
+        eligible households and businesses understand their water supply
+        options and navigate the sign-up journey.
+      </p>
+
+      <h2>Leading UK water providers.</h2>
+
+      <p class="section-description">
+        Our agents support customer sign-ups with recognised water providers,
+        helping customers connect with the provider serving their area.
+      </p>
+
+      <div class="companies-grid">
+
+        <a class="company-card reveal" href="https://www.thameswater.co.uk" target="_blank" rel="noopener noreferrer">
+          <span class="cc-rank">01</span>
+          <h3>Thames Water</h3>
+          <p>
+            The UK's largest water and wastewater provider, serving around
+            16 million customers across London and the Thames Valley.
+          </p>
+        </a>
+
+        <a class="company-card reveal" href="https://www.anglianwater.co.uk" target="_blank" rel="noopener noreferrer">
+          <span class="cc-rank">02</span>
+          <h3>Anglian Water</h3>
+          <p>
+            A major water provider serving around 7 million customers across
+            the East of England.
+          </p>
+        </a>
+
+        <a class="company-card reveal" href="https://www.unitedutilities.com" target="_blank" rel="noopener noreferrer">
+          <span class="cc-rank">03</span>
+          <h3>United Utilities</h3>
+          <p>
+            The main water and wastewater provider serving around 7 million
+            customers across North West England.
+          </p>
+        </a>
+
+        <a class="company-card reveal" href="https://www.yorkshirewater.com" target="_blank" rel="noopener noreferrer">
+          <span class="cc-rank">04</span>
+          <h3>Yorkshire Water</h3>
+          <p>
+            A leading regional provider serving around 5.5 million customers
+            across Yorkshire.
+          </p>
+        </a>
+
+        <a class="company-card reveal" href="https://www.scottishwater.co.uk" target="_blank" rel="noopener noreferrer">
+          <span class="cc-rank">05</span>
+          <h3>Scottish Water</h3>
+          <p>
+            Scotland's publicly owned water provider, serving more than
+            5 million customers across Scotland.
+          </p>
+        </a>
+
+        <a class="company-card reveal" href="https://www.wessexwater.co.uk" target="_blank" rel="noopener noreferrer">
+          <span class="cc-rank">06</span>
+          <h3>Wessex Water</h3>
+          <p>
+            Serving Bath, Bristol and the wider South West England region,
+            known for strong customer satisfaction performance.
+          </p>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ============ COMPLIANCE BAND ============ -->
+  <section class="comp-band" style="padding:0;">
+    <div class="comp-grid">
+      <div class="comp-card reveal">
+        <h4>Do-not-call screening</h4>
+        <p>Lists are checked before every campaign goes live.</p>
+      </div>
+      <div class="comp-card reveal">
+        <h4>Vulnerable-customer flags</h4>
+        <p>Agents are trained to pause and escalate, not push through.</p>
+      </div>
+      <div class="comp-card reveal">
+        <h4>Cooling-off honoured</h4>
+        <p>Every sign-up confirmation states the cancellation window aloud.</p>
+      </div>
+      <div class="comp-card reveal">
+        <h4>Full audit trail</h4>
+        <p>Recording, consent timestamp, and script version — all attached to one record.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq-white">
+    <div class="wrap" style="max-width:820px;">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="dot"></span> Common questions</span>
+        <h2>Before you sign off on a campaign.</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item open">
+          <div class="faq-q">
+            <h4>How long before we're live?</h4><svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+              stroke-linecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </div>
+          <div class="faq-a">
+            <p>Typically two weeks from script sign-off to first live dial, including agent training and system setup.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            <h4>Can we listen to calls in real time?</h4><svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+              stroke-linecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </div>
+          <div class="faq-a">
+            <p>Yes. Supervisors and your team can join the floor from day one, not just review recordings afterward.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            <h4>Who owns script changes once we're live?</h4><svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+              stroke-linecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </div>
+          <div class="faq-a">
+            <p>Your compliance team. Any revision is proposed by us but only goes live once you've signed off on the
+              exact wording.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            <h4>Do you handle both residential and SME sign-ups?</h4><svg viewBox="0 0 24 24" fill="none"
+              stroke-width="2" stroke-linecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </div>
+          <div class="faq-a">
+            <p>Yes, we run separate scripts and eligibility checks for each, since the disclosures required aren't the
+              same.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ CTA ============ -->
+  <section class="cta-band">
+    <div class="wrap reveal">
+      <h2>Ready to flow into<br>your water campaign?</h2>
+      <p>Send us your target region and supplier and we'll come back with a script outline, staffing plan, and pricing
+        within two working days.</p>
+      <a href="knight.html#contact" class="btn btn-primary">Book a Strategy Call</a>
+    </div>
+  </section>
+
+ <div id="footer-placeholder"></div>
+ <script src="partials/include.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="WaterSupply.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <div class="logo"><span class="mark"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" fill="white" />
+              </svg></span>Knight Tech Solution</div>
+          <p>Premium outbound calling teams for electricity & gas, water supply, card machine acquisition, and
+            landline & broadband.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="Electricity.html">Electricity & Gas</a></li>
+            <li><a href="WaterSupply.html">Water Supply</a></li>
+            <li><a href="card-machine-acquisition.html">Card Machine</a></li>
+            <li><a href="Landline-Broadband.html">Landline & Broadband</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="knight.html#process">Our Process</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@knighttechsolution.com">hello@knighttechsolution.com</a></li>
+            <li><a href="tel:+10000000000">+1 (000) 000-0000</a></li>
+          </ul>
+
+        </div>
+        <div class="footer-col footer-col-location">
+          <h5>Our Location</h5>
+          <div class="footer-location-map">
+            <iframe
+              src="https://maps.google.com/maps?q=Softbeck%20Limited%2C%20356-A%2C%202nd%20Floor%2C%20D%20Ground%2C%20Block%20A%2C%20Faisalabad%2C%20Pakistan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Mateen Group of Company location map"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Knight Tech Solution. All rights reserved.</span>
+        <span>Compliance-first outbound calling.</span>
+      </div>
+    </div>
+  </footer>
